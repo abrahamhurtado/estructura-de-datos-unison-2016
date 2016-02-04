@@ -1,0 +1,20 @@
+{
+  "name": "@arhcstolen/data-structures-course-in-js",
+  "version": "1.0.0",
+  "description": "\"Code from the Data Structures course in Universidad de Sonora\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "0.11.0"
+  },
+  "ava": {
+    "files": [
+      "**/test.js"
+    ],
+    "verbose": true
+  }
+}
