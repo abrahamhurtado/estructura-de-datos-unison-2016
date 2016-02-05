@@ -4,7 +4,8 @@
   "description": "\"Code from the Data Structures course in Universidad de Sonora\"",
   "main": "index.js",
   "scripts": {
-    "test": "ava --tap | tap-nyan"
+    "test": "ava",
+    "test-cat": "ava --tap | tap-nyan"
   },
   "author": "",
   "license": "ISC",
