@@ -1,16 +1,16 @@
-function mean1 (array) {
+function meanForEach (array) {
   var suma = 0;
 
-  array.forEach(numero => suma += numero);
+  array.forEach((numero) => suma += numero);
 
-  return suma/array.length;
+  return suma / array.length;
 }
 
-function mean2 (array) {
+function meanReduce (array) {
   return array.reduce((a, b) => a + b, 0) / array.length;
 }
 
 module.exports = {
-  meanForEach: mean1,
-  meanReduce: mean2
-}
+  meanForEach,
+  meanReduce
+};

@@ -1,3 +1,10 @@
+function swap (array, i, j) {
+  var temp = array[j];
+  array[j] = array[i];
+  array[i] = temp;
+  return array;
+}
+
 function bubblesort (array) {
 
   for (var i = 0; i < array.length; i++) {
@@ -11,13 +18,4 @@ function bubblesort (array) {
   return array;
 }
 
-function swap (array, i, j) {
-  var temp = array[j];
-  array[j] = array[i];
-  array[i] = temp;
-  return array;
-}
-
 module.exports = bubblesort;
-
-// bubblesort([-3,-7,4,0,8])

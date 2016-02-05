@@ -5,12 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "ava",
-    "test-cat": "ava --tap | tap-nyan"
+    "test-cat": "ava --tap | tap-nyan",
+    "lint": "eslint ."
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "ava": "0.11.0",
+    "babel-eslint": "4.1.8",
+    "eslint": "1.10.3",
+    "precommit-hook-eslint": "3.0.0",
     "tap-nyan": "0.0.2"
   },
   "ava": {
@@ -18,5 +22,9 @@
       "**/test.js"
     ],
     "verbose": true
-  }
+  },
+  "pre-commit": [
+    "lint",
+    "test"
+  ]
 }

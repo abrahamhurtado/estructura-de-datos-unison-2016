@@ -11,9 +11,6 @@
     "classes": true,
     "modules": [2]
   },
-  "plugins": [
-    "react"
-  ],
   "rules": {
     "comma-dangle": [2, "never"],
     "complexity": [0, 11],
@@ -148,31 +145,12 @@
     "no-class-assign": [2],
     "no-dupe-class-members": [2],
     "no-this-before-super": [2],
-    "no-var": [2],
+    "no-var": [0],
     "object-shorthand": [2, "always"],
     "prefer-arrow-callback": [2],
     "prefer-const": [0],
     "prefer-spread": [2],
     "prefer-template": [2],
-    "require-yield": [2],
-    "react/jsx-curly-spacing": [1, "always"],
-    "react/jsx-max-props-per-line": [1, {"maximum: 1"}],
-    "react/jsx-no-duplicate-props": 2,
-    "react/jsx-no-undef": 2,
-    "react/jsx-closing-bracket-location": [1, {"location": "tag-aligned"}],
-    "react/jsx-indent-props": [2, 2],
-    "react/jsx-sort-prop-types": [1, {"ignoreCase": true}],
-    "react/jsx-uses-react": 2,
-    "react/jsx-uses-vars": 2,
-    "react/no-set-state": 2,
-    "react/no-danger": 2,
-    "react/no-did-mount-set-state": 2,
-    "react/no-did-update-set-state": 2,
-    "react/no-multi-comp": 2,
-    "react/no-unknown-property": 2,
-    "react/require-extension": [1, {"extensions": [".js", ".jsx"]}],
-    "react/self-closing-comp": 2,
-    "react/sort-comp": [1, {"order": ["lifecycle", "everything-else","render"]}],
-    "react/wrap-multilines": [1, {"declaration": true, "assingment": true, "return": true}]
+    "require-yield": [2]
   }
 }

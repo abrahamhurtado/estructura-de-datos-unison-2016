@@ -6,15 +6,15 @@ function isEven (number) {
   } else {
     return false;
   }
-};
+}
 
 function median (array) {
   selectionSort(array);
 
-  var halfPosition = parseInt((array.length + 1)/2);
+  var halfPosition = parseInt((array.length + 1) / 2);
 
   if (isEven(array.length)) {
-    return (array[halfPosition] + array[halfPosition - 1])/2;
+    return (array[halfPosition] + array[halfPosition - 1]) / 2;
   } else {
     return array[halfPosition - 1];
   }
@@ -22,6 +22,6 @@ function median (array) {
 }
 
 module.exports = {
-  isEven: isEven,
-  median: median
-}
+  isEven,
+  median
+};
