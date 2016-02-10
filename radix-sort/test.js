@@ -2,6 +2,7 @@ var test = require('ava');
 var radixSort = require('./radix-sort');
 var flatten = require('./flatten');
 var createList = require('./createList');
+var populateList = require('./populateList');
 
 
 test('createList() debe regresar un arreglo de tamaño 10', (t) => {
@@ -24,6 +25,43 @@ test('El arreglo que regresa createList() debe contener 10 arreglos', (t) => {
     [],
     [],
     []
+  ];
+
+  t.same(actual, expected);
+});
+
+test(`Dado el arreglo [109, 17, 89, 4, 59], el modulo 10 y el divisor 1, populateList() debe regresar
+  [
+    [],
+    [],
+    [],
+    [],
+    [4],
+    [],
+    [],
+    [17],
+    [58],
+    [108, 59]
+  ]
+`, (t) => {
+  const actual = populateList(
+    [ 109, 17, 89, 4, 58 ],
+    createList(),
+    10,
+    1
+  );
+
+  const expected = [
+    [],
+    [],
+    [],
+    [],
+    [ 4 ],
+    [],
+    [],
+    [ 17 ],
+    [ 58 ],
+    [ 109, 89 ]
   ];
 
   t.same(actual, expected);

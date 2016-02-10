@@ -1,19 +1,19 @@
 var flatten = require('./flatten');
 var createList = require('./createList');
+var populateList = require('./populateList');
 
 function radixSort (array, list, modulo, divisor) {
-  var newList = createList();
 
   if (list[0].length >= array.length) {
     return array;
   }
 
-  array.forEach((elemento) => {
-    var residuo = elemento % modulo;
-    var posicion = parseInt(residuo / divisor);
-
-    newList[posicion].push(elemento);
-  });
+  var newList = populateList(
+    array,
+    createList(),
+    modulo,
+    divisor
+  );
 
   return radixSort(
     flatten(newList),
